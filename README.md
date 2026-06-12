@@ -12,7 +12,7 @@ An AI-powered health prediction platform that analyses patient blood test result
 | Backend   | FastAPI · Python 3.10 · SQLAlchemy          |
 | Database  | SQLite (persistent)                          |
 | AI/ML     | Groq API — LLaMA 3 (llama3-8b-8192)        |
-| Deploy    | Vercel (frontend) · HuggingFace Spaces (backend) |
+
 
 ---
 
