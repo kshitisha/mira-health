@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy:      #0B1929;
+    --surface:   #0F2336;
+    --slate:     #1E3A4F;
+    --border:    #1D3D54;
+    --teal:      #0EA5A0;
+    --teal-lt:   #14C4BE;
+    --muted:     #4A7A8A;
+    --text:      #E8F4F8;
+    --text-dim:  #8BAABB;
+  }
+
+  * { @apply border-brand-border; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background-color: #0B1929;
+    color: #E8F4F8;
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Sora', Inter, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: #0B1929; }
+  ::-webkit-scrollbar-thumb { background: #1D3D54; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #0EA5A0; }
+}
+
+@layer components {
+  .card {
+    @apply bg-brand-surface border border-brand-border rounded-xl;
+  }
+
+  .btn-primary {
+    @apply bg-brand-teal hover:bg-brand-teal-light text-white font-medium px-4 py-2 rounded-lg
+           transition-all duration-200 flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-ghost {
+    @apply text-brand-teal border border-brand-border hover:border-brand-teal hover:bg-brand-teal/10
+           font-medium px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2;
+  }
+
+  .btn-danger {
+    @apply bg-status-danger/10 border border-status-danger/30 hover:bg-status-danger/20
+           text-status-danger font-medium px-4 py-2 rounded-lg transition-all duration-200 flex items-center gap-2;
+  }
+
+  .input {
+    @apply w-full bg-brand-navy border border-brand-border rounded-lg px-3 py-2
+           text-[#E8F4F8] placeholder-brand-muted focus:outline-none
+           focus:border-brand-teal focus:ring-1 focus:ring-brand-teal/30
+           transition-all duration-200 font-mono text-sm;
+  }
+
+  .label {
+    @apply block text-xs font-medium text-brand-muted mb-1 uppercase tracking-wider;
+  }
+
+  .badge-normal  { @apply bg-status-normal/10 text-status-normal  border border-status-normal/20  text-xs px-2 py-0.5 rounded-full; }
+  .badge-warning { @apply bg-status-warning/10 text-status-warning border border-status-warning/20 text-xs px-2 py-0.5 rounded-full; }
+  .badge-danger  { @apply bg-status-danger/10  text-status-danger  border border-status-danger/20  text-xs px-2 py-0.5 rounded-full; }
+}
