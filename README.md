@@ -95,6 +95,4 @@ App runs at: http://localhost:5173
 
 ---
 
-## Security Note
 
-API keys are stored as environment variables / HuggingFace Space Secrets. They are **never hardcoded** in source code.
