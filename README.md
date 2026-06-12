@@ -62,24 +62,11 @@ npm run dev
 
 App runs at: http://localhost:5173
 
----
 
-## Deployment
 
-### Backend → HuggingFace Spaces
 
-1. Create a new Space (Docker SDK)
-2. Push the `backend/` folder contents
-3. Add `GROQ_API_KEY` as a Space Secret (Settings → Variables and secrets)
 
-### Frontend → Vercel
 
-1. Push `frontend/` to GitHub
-2. Import repo in Vercel
-3. Set env var: `VITE_API_BASE_URL=https://your-hf-space.hf.space`
-4. Deploy
-
----
 
 ## API Endpoints
 
