@@ -38,9 +38,9 @@ python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-# Create .env from template
+#create .env
 cp .env.example .env
-# Add your GROQ_API_KEY in .env
+#add your GROQ_API_KEY in .env here
 
 uvicorn main:app --reload --port 7860
 ```
@@ -53,9 +53,9 @@ API docs available at: http://localhost:7860/docs
 cd frontend
 npm install
 
-# Create .env from template
+#create .env 
 cp .env.example .env
-# Set VITE_API_BASE_URL=http://localhost:7860
+#set VITE_API_BASE_URL=http://localhost:7860
 
 npm run dev
 ```
