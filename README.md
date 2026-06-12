@@ -11,7 +11,7 @@ An AI-powered health prediction platform that analyses patient blood test result
 | Frontend  | React 19 · Vite · Tailwind CSS              |
 | Backend   | FastAPI · Python 3.10 · SQLAlchemy          |
 | Database  | SQLite (persistent)                          |
-| AI/ML     | Groq API — LLaMA 3 (llama3-8b-8192)        |
+| AI/ML     | Groq API — LLaMA 3.3 (llama-3.3-70b-versatile) |      |
 
 
 ---
